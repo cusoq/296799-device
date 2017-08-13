@@ -17,9 +17,10 @@
           <form class="header-search" action="#" method="get">
           </form>
         </li>
-        <li><ul class="user-navigation">
-          <li class="login-link">Вход</li>
-        </ul>
+        <li>
+          <ul class="user-navigation">
+            <li class="login-link">Вход</li>
+          </ul>
         </li>
         <li><a class="button" href="#">Сравнить</a></li>
         <li><button class="button" type="submit">Корзина</button></li>
@@ -35,6 +36,107 @@
     </nav>
   </header>
   <main class="content">
+    <h1 class="visually-hdden">Device</h1>
+    <section class="item01">
+      <h2 class="visually-hdden">Selfie stick tripod</h2>
+      <img src="img/item01.svg" alt="Selfie stick tripod">
+      <p class="item01-intro">
+        <b>Делай селфи, как Бен Стиллер!</b> Самая длинная (...) 5 килограмм
+      </p>
+      <form class="details-input" method="get" action="#">
+        <fieldset>
+          <legend>Подробнее</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="x" checked>x
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="y">y
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="z">z
+            </li>
+
+          </ul>
+        </fieldset>
+      </form>
+      <table class="options">
+        <tr>
+          <td>8.5м</td>
+          <td>5кг</td>
+          <td>Карбон</td>
+        </tr>
+        <tr>
+          <td>Длина палки</td>
+          <td>Вес палки</td>
+          <td>Материал</td>
+      </table>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hdden">Все товары</h2>
+      <ul class="catalog-list">
+        <li class="item03"><img src="img/item-sprite.jpg" alt="item03"></li>
+        <li class="item02"><img src="img/item-sprite.jpg" alt="item02"></li>
+        <li class="item04"><img src="img/item-sprite.jpg" alt="item04"></li>
+        <li class="item05"><img src="img/item-sprite.jpg" alt="item05"></li>
+        <li class="item06"><img src="img/item-sprite.jpg" alt="item06"></li>
+        <li class="item07"><img src="img/item-sprite.jpg" alt="item07"></li>
+
+      </ul>
+    </section>
+    <section class="features">
+      <h2 class="visually-hdden">Вам будут предложены:</h2>
+      <form class="features-input" method="get" action="#">
+        <fieldset>
+          <ul>
+            <li class="delivery">
+              <input class="visually-hidden features-input features-input-radio" type="radio" name="features" value="x" checked>x
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden features-input features-input-radio" type="radio" name="features" value="y">y
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden features-input features-input-radio" type="radio" name="features" value="z">z
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <!-- Пока что мне кажется, что описание и картинка услуги должны включаться радиоботтонами... Какие еще возможны варианты? -->
+      <h3>Доставка</h3>
+      <p class="deiivery-description">
+        Мы с удовольствием ...
+
+        <img src="img/delivery.svg" alt="достака">
+      </p>
+    </section>
+    <section class="parnership">
+      <h2 class="visually-hdden">Партнёры</h2>
+      <ul class="partner-list">
+        <li class="partner1"><img src="img/partner-sprite.jpg" alt="partner1"></li>
+        <li class="partner2"><img src="img/partner-sprite.jpg" alt="partner2"></li>
+        <li class="partner3"><img src="img/partner-sprite.jpg" alt="partner3"></li>
+        <li class="partner4"><img src="img/partner-sprite.jpg" alt="partner4"></li>
+      </ul>
+    </section>
+    <section class="about-us">
+      <h2>О нас</h2>
+      <p>Огромный выбор...</p>
+      <p>Мы можем доставить...</p>
+      <div>
+        <ul class="partner-short">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>Желдорэкспедиция</li>
+        </ul>
+      </div>
+      <p><a href="#">Подробнее о нас</a></p>
+    </section>
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>Вы можете выбрать товар...</p>
+      <p class="contacts-map"><a href="#"><img src="img/map.jpg" alt="Карта проезда"></a></p>
+      <p><a href="#"> Напишите нам </a></p>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -43,9 +145,10 @@
         </a>
     <ul class="main-footer-action">
 
-      <li><ul class="user-navigation">
-        <li class="login-link">Вход</li>
-      </ul>
+      <li>
+        <ul class="user-navigation">
+          <li class="login-link">Вход</li>
+        </ul>
       </li>
       <li><a class="button" href="#">Сравнить</a></li>
       <li><button class="button" type="submit">Корзина</button></li>
