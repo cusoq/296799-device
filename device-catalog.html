@@ -31,14 +31,14 @@
       <ul class="header-site-navigation">
 
         <li class="device-catalog">Каталог товаров
-        <ul class="device-catalog-list">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнесс-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
+          <ul class="device-catalog-list">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
         </li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -48,6 +48,68 @@
     </nav>
   </header>
   <main class="content">
+    <h1 class="page-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li><a class="breadcrumbs-navigation" href="#">главная</a></li>
+      <li><a class="breadcrumbs-navigation" href="#">каталог товаров</a></li>
+      <li class="breadcrumbs-navigation-current">Моноподы для селфи</li>
+    </ul>
+
+    <section class="product-photoes">
+      <h2 class="visually-hidden">Фото товаров</h2>
+      <section class="product-photoes-filter">
+        <!-- А может быть, сделать этот раздел как aside? -->
+        <h3 class="visually-hidden">Фильтр товаров</h3>
+        <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input class="price-option" type="text" name="price" value="">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>чёрный
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="green">зелёный
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" checked>синий
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" checked>красный
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink">розовый
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="y" checked>Есть
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="n">Нет
+              </li>
+
+            </ul>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="product-photoes-select">
+          <h3 class="visually-hidden">Сортировка товаров</h3>
+      <p class="product-photoes-select-form">    <form class="filter" method="get" action="#">
+              <legend>Сортировка</legend>
+              <input class="product-photoes-select-list" type="checkbox" name="">
+          </form>
+        </p>
+
+      </section>
+    </section>
   </main>
 
   <footer class="main-footer">
