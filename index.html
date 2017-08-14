@@ -27,7 +27,16 @@
       </ul>
       <ul class="header-site-navigation">
 
-        <li><a href="device-catalog.html">Каталог товаров</a></li>
+        <li class="device-catalog">Каталог товаров
+        <ul class="device-catalog-list">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнесс-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+        </li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -37,12 +46,57 @@
   </header>
   <main class="content">
     <h1 class="visually-hdden">Device</h1>
-    <section class="item01">
-      <h2 class="visually-hdden">Selfie stick tripod</h2>
-      <img src="img/item01.svg" alt="Selfie stick tripod">
-      <p class="item01-intro">
-        <b>Делай селфи, как Бен Стиллер!</b> Самая длинная (...) 5 килограмм
-      </p>
+    <section class="new-items">
+      <h2 class="visually-hdden">Новинки</h2>
+      <section class="items">
+        <!-- Здесь идея настроить переключатель, чтобы прятать и выявлять нужный товар -->
+        <h3 class="visually-hdden">Трипод для селфи</h3>
+        <p class="item01-intro ">
+          <b>Делай селфи, как Бен Стиллер!</b> Самая длинная (...) 5 килограмм
+          <img src="img/item01.svg" alt="Selfie stick tripod">
+        </p>
+        <table class="options">
+          <tr>
+            <td>8.5м</td>
+            <td>5кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr>
+            <td>Длина палки</td>
+            <td>Вес палки</td>
+            <td>Материал</td>
+        </table>
+      </section>
+      <section class="items">
+        <h3 class="visually-hdden">Фитнесс-браслет</h3>
+        <p class="item02-intro ">
+          <b>Худеем правильно!</b> Мотивирующие фитнесс-браслеты..
+          <img src="img/item02.svg" alt="Фитнесс-браслет">
+        </p>
+        <table class="options">
+          <tr>
+            <td>48часов</td>
+          </tr>
+          <tr>
+            <td>Без подзарядки</td>
+        </table>
+      </section>
+      <section class="items">
+        <h3 class="visually-hdden">Квадрокоптер</h3>
+        <p class="item03-intro ">
+          <b>Прхает какбабочка, жалит как пчела!</b> Этот обычныйна первый взгляд..
+          <img src="img/item03.svg" alt="Квадрокоптер">
+        </p>
+        <table class="options">
+          <tr>
+            <td>800м</td>
+            <td>50м</td>
+          </tr>
+          <tr>
+            <td>Дальность полёта</td>
+            <td>Вес палки</td>
+        </table>
+      </section>
       <form class="details-input" method="get" action="#">
         <fieldset>
           <legend>Подробнее</legend>
@@ -51,36 +105,27 @@
               <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="x" checked>x
             </li>
             <li class="filter-option">
-              <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="y">y
+              <input class="visually-hidden details-input details-input-radio" type="radio" name="item02" value="y">y
             </li>
             <li class="filter-option">
-              <input class="visually-hidden details-input details-input-radio" type="radio" name="item01" value="z">z
+              <input class="visually-hidden details-input details-input-radio" type="radio" name="item03" value="z">z
             </li>
 
           </ul>
         </fieldset>
       </form>
-      <table class="options">
-        <tr>
-          <td>8.5м</td>
-          <td>5кг</td>
-          <td>Карбон</td>
-        </tr>
-        <tr>
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-      </table>
+
     </section>
     <section class="catalog">
       <h2 class="visually-hdden">Все товары</h2>
       <ul class="catalog-list">
-        <li class="item03"><img src="img/item-sprite.jpg" alt="item03"></li>
-        <li class="item02"><img src="img/item-sprite.jpg" alt="item02"></li>
-        <li class="item04"><img src="img/item-sprite.jpg" alt="item04"></li>
-        <li class="item05"><img src="img/item-sprite.jpg" alt="item05"></li>
-        <li class="item06"><img src="img/item-sprite.jpg" alt="item06"></li>
-        <li class="item07"><img src="img/item-sprite.jpg" alt="item07"></li>
+        <!-- Уместно ли задействовать спрайт? -->
+        <li class="item03"><img src="img/item-sprite.jpg" alt="Виртуальная реальность"></li>
+        <li class="item02"><img src="img/item-sprite.jpg" alt="Моноподы для селфи"></li>
+        <li class="item04"><img src="img/item-sprite.jpg" alt="Экшн-камеры"></li>
+        <li class="item05"><img src="img/item-sprite.jpg" alt="Фитнесс-браслеты"></li>
+        <li class="item06"><img src="img/item-sprite.jpg" alt="Умные часы"></li>
+        <li class="item07"><img src="img/item-sprite.jpg" alt="Квадрокоптеры"></li>
 
       </ul>
     </section>
@@ -112,6 +157,7 @@
     <section class="parnership">
       <h2 class="visually-hdden">Партнёры</h2>
       <ul class="partner-list">
+        <!-- Сделать логотипы на спрайте? -->
         <li class="partner1"><img src="img/partner-sprite.jpg" alt="partner1"></li>
         <li class="partner2"><img src="img/partner-sprite.jpg" alt="partner2"></li>
         <li class="partner3"><img src="img/partner-sprite.jpg" alt="partner3"></li>
