@@ -63,7 +63,7 @@
     <section class="product-">
       <h2 class="visually-hidden">Фото товаров</h2>
       <section class="product-photos-filter">
-        <!-- А может быть, сделать этот раздел как aside? -->
+
         <h3 class="visually-hidden">Фильтр товаров</h3>
         <form class="filter" method="get" action="#">
           <fieldset>
@@ -116,15 +116,22 @@
           <button class="filter-button" type="submit">Показать</button>
         </form>
       </section>
-      <section class="product-photos-select">
+      <section class="product-select">
         <h3 class="visually-hidden">Сортировка товаров</h3>
+        <div class="results">
 
-        <form class="filter" method="get" action="#">
-          <fieldset>
-            <legend>Сортировка</legend>
-            <input class="product-photos-select-list" type="checkbox" name="x">
-          </fieldset>
-        </form>
+          <p>Сортировка:</p>
+          <ul class="filter-results-list">
+            <li class="filter-results-item"><button class="results-button">По цене</button></li>
+            <li class="filter-results-item"><button class="results-button">По типу</button></li>
+            <li class="filter-results-item"><button class="results-button">По популярности</button></li>
+          </ul>
+          <ul class="sort-buttons">
+            <li class="sort-buttons-item"><button>▲</button></li>
+            <li class="sort-buttons-item"><button>▼</button></li>
+          </ul>
+        </div>
+
 
         <ul class="catalog-list">
           <li class="catalog-item">
