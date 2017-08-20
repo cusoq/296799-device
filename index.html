@@ -179,16 +179,14 @@
       <h2>Контакты</h2> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       <p class="contacts-map"><a href="#"><img src="img/map.jpg" alt="Карта проезда"></a></p>
       <form class="contact-us" action="#" method="post">
-        <label for="email">Напишите нам</label>
-        <input class="btn" type="email" name="email" id="email">
-        <!-- Следующие поля совершенно не понимаю, как впихнуть. Их же явно нет в макете. -->
-        <label for="phone">Контактный телефон:</label>
-        <input type="text" name="phone" id="phone">
-        <label for="message">Текст обращения:</label>
-        <textarea name="message" id="message">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+        <label for="email">Ваш e-mail:</label>
+        <input class="btn" type="email" name="email" id="email" placeholder="Для отправки ответа">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме">
           </textarea>
         <input type="submit" value="Отправить">
-        <!--   По логике должна же быть кнопка отправки? -->
       </form>
     </section>
   </main>
