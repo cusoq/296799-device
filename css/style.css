@@ -1,24 +1,20 @@
 body {
   font-size: 15px;
   line-height: 2;
-   color: rgb(70, 70, 70);
-  font-weight: normal;
+  color: rgb(70, 70, 70);
+  font-weight: 300;
   font-family: Open Sans, Arial, sans-serif;
 }
-
-.page-title {
-  font-size: 47px;
+.title-main, .title-secondary {
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
 }
+.title-main {
+  font-size: 47px;
+}
 
-.contacts-title,
-.about-us-title {
+.title-secondary {
   font-size: 21px;
-  font-family: "Gilroy",Arial, sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  line-height: 1.2;
 }
