@@ -5,12 +5,14 @@ body {
   font-weight: 300;
   font-family: Open Sans, Arial, sans-serif;
 }
+
 .title-main, .title-secondary {
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 700;
   line-height: 1.2;
 }
+
 .title-main {
   font-size: 47px;
 }
