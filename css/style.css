@@ -8,7 +8,8 @@ html, body {
   font-weight: 300;
 }
 
-.title-main, .title-secondary {
+.title-main,
+.title-secondary {
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 700;
@@ -40,7 +41,7 @@ html, body {
   line-height: 2;
   color: rgb(0, 0, 0);
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: inherit;
   letter-spacing: normal;
 }
 
@@ -76,7 +77,10 @@ html, body {
   font-weight: 300;
 }
 
-.catalog-list-item figcaption, .partner-short li, .contact-us label, .catalog-product p {
+.catalog-list-item a,
+.partner-short li,
+.contact-us label,
+.catalog-product p {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   color: rgb(0, 0, 0);
@@ -106,21 +110,30 @@ a {
   color: rgb(70, 70, 70);
 }
 
-a.enter:hover, .header-search:hover label, a.breadcrumbs-navigation:hover, .reaction {
+a.pale-direct:hover,
+.header-search:hover label,
+a.breadcrumbs-navigation:hover,
+.pale-inverse {
   opacity: 0.6;
 }
 
-a.enter:active, .header-search label, a.breadcrumbs-navigation, a.reaction:active {
+a.pale-direct:active,
+.header-search label,
+a.breadcrumbs-navigation,
+a.pale-inverse:active {
   opacity: 0.3;
 }
 
-.header-search:focus, .reaction:hover {
+.header-search:focus,
+.pale-inverse:hover {
   opacity: 1;
 }
 
-a.breadcrumbs-navigation:active, .current {
+a.breadcrumbs-navigation:active,
+.current {
   opacity: 0.1;
 }
+
 
 .search-btn {
   width: 85px;
@@ -152,107 +165,127 @@ li {
 }
 
 .visually-hidden {
-  visibility: hidden;
+    position: absolute !important;
+  	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  	clip: rect(1px, 1px, 1px, 1px);
+  	padding:0 !important;
+  	border:0 !important;
+  	height: 1px !important;
+  	width: 1px !important;
+  	overflow: hidden;
 }
 
 .filter fieldset {
   border: none;
 }
 
-.btn-line {
+.btn {
   position: relative;
   display: inline-block;
-  width: 260px;
-  height: 40px;
-}
-
-.btn-line::after {
-  content: "Подробнее";
-  position: absolute;
-  top: 8px;
-  left: 35px;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.2em;
+  vertical-align: baseline;
+  padding: .612em 1em;
+  font: 700 18px/1 "Gilroy", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  letter-spacing: .13em;
+  text-decoration: none;
+  color: inherit;
+  text-align: cpale-direct;
 }
 
-.btn-line::before {
+.btn::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 0px;
-  width: 220px;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  left: 0;
   height: 8px;
   background-color: #f0c52e;
+  transform: translateY(-50%);
+  transition: height .2s linear;
 }
 
-.btn:hover .btn-line::before {
-  top: 0px;
-  height: 40px;
+.btn:hover::after {
+  height: 100%;
 }
 
-.btn:active .btn-line::after {
-  opacity: 0.3;
+.btn:active {
+  color: rgba(0, 0, 0, .3);
+  outline: none;
 }
 
-.icon {
-  display: flex;
-  width: 160px;
-  height: 160px;
-  background-color: #f7e296;
+.btn-slider {
+  min-width: 220px;
 }
 
-.catalog-list-item svg {
-  margin: auto;
+.btn-about-us, .btn-contacts {
+  min-width: 260px;
 }
 
-.catalog-list-item:nth-child(2) svg {
-  margin: auto;
-  margin-bottom: 0;
+.btn-catalog-product {
+  min-width: 200px;
 }
 
-.catalog-list-item a:hover .icon {
-  background-color: rgba(240, 197, 46, 1);
+.btn-option {
+  min-width: 160px;
 }
 
-.catalog-list-item a:active svg {
-  opacity: 0.3;
+.btn-option:active {
+  color: #f7e184;
+  opacity: 1;
 }
 
-.catalog-list-item a:active figcaption {
-  opacity: 0.3;
-}
-
-.delivery .btn-line::after {
-  content: "Доставка";
-  left: 50px;
-}
-
-.warranty .btn-line::after {
-  content: "Гарантия";
-  left: 50px;
-}
-
-.credit .btn-line::after {
-  content: "Кредит";
-  left: 60px;
-}
-
-.filter-option .btn:active .btn-line::before {
+.btn-option:active::after {
   width: 278px;
   height: 40px;
   background-color: #000000;
 }
 
-.filter-option .btn:active .btn-line::after {
-  color: #f7e184;
-  opacity: 1;
+.icon {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
 }
 
+.catalog-list-item:nth-child(1) .icon {
+  background-image: url(../img/popular-1.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.catalog-list-item:nth-child(2) .icon {
+  background-image: url(../img/popular-2.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+}
+.catalog-list-item:nth-child(3) .icon {
+  background-image: url(../img/popular-3.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.catalog-list-item:nth-child(4) .icon {
+  background-image: url(../img/popular-4.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.catalog-list-item:nth-child(5) .icon {
+  background-image: url(../img/popular-5.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.catalog-list-item:nth-child(6) .icon {
+  background-image: url(../img/popular-6.min.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.catalog-list-item a:hover .icon {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.catalog-list-item a:active,
+.catalog-list-item a:active .icon {
+  opacity: 0.3;
+}
 .partner-list img {
   opacity: 0.2;
   filter: grayscale(1);
@@ -281,28 +314,24 @@ li {
   width: 260px;
 }
 
-.contact-us .to-us {
+.contact-us .contact-us-input {
   width: 360px;
   height: 50px;
   color: rgba(70, 70, 70, 0.4);
   background-color: #f2f2f2;
-  border: none;
 }
 
-.contact-us .to-us:hover {
+.contact-us .contact-us-input:hover {
   color: rgba(70, 70, 70, 0.4);
   background-color: #eaeaea;
 }
-
-.contact-us .to-us:focus {
+.contact-us .contact-us-input:focus:valid {
   color: #000000;
   background-color: #ffffff;
-  border: solid 2px #f7e296;
+  outline: solid 3px #f7e296;
 }
-
-.contact-us .to-us:invalid {
-  color: rgba(70, 70, 70, 0.4);
-  border-color: #f6dada;
+.contact-us .contact-us-input:invalid{
+background-color: #f6dada;
 }
 
 .main-footer {
@@ -317,16 +346,16 @@ li {
 .main-footer a {
   color: #ffffff;
 }
-
+p.footer-copyright {
+  margin: 0;
+}
 .filter-caption-wrapper {
   width: 440px;
-  height: 70px;
   background-color: #dcdcdc;
 }
 
 .filter-wrapper {
   width: 440px;
-  height: 1215px;
   background-color: #ebebeb;
 }
 
@@ -346,7 +375,6 @@ li {
 
 .results-wrapper {
   width: 975px;
-  height: 70px;
   background-color: #ebebeb;
 }
 
@@ -354,14 +382,14 @@ li {
   display: inline;
 }
 
-.catalog-product .btn-line::after {
-  content: "В корзину";
-  left: 45px;
+.catalog-product-image {
+  width: 360px;
+  height: 380px;
+  background-color: #eeeeee;
 }
 
 .pagination-wrapper {
   width: 760px;
-  height: 70px;
   background-color: #ebebeb;
 }
 
