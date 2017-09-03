@@ -7,12 +7,15 @@ html, body {
   color: rgb(70, 70, 70);
   font-weight: 300;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 .title-main,
 .title-secondary {
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -20,7 +23,7 @@ html, body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -29,7 +32,7 @@ html, body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -45,19 +48,20 @@ html, body {
   letter-spacing: normal;
 }
 
-.item-intro b {
+.item-intro {
   font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
+  font-size: 48px;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
+  letter-spacing: normal;
 }
 
 .filter legend {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -69,7 +73,7 @@ html, body {
   line-height: 1.2;
 }
 
-.slider-features-item span {
+.item-intro span {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.54;
@@ -84,7 +88,7 @@ html, body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -92,7 +96,7 @@ html, body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   color: rgb(0, 0, 0);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -191,7 +195,7 @@ li {
   display: inline-block;
   vertical-align: baseline;
   padding: .612em 1em;
-  font: 700 18px/1 "Gilroy", Arial, Helvetica, sans-serif;
+  font: 800 18px/1 "Gilroy", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: .13em;
   text-decoration: none;
@@ -420,39 +424,51 @@ p.footer-copyright {
 
 @font-face {
   font-family: "gilroylight";
-  src: url("fonts/gilroylight-webfont.woff2") format("woff2"), url("fonts/gilroylight-webfont.woff") format("woff");
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"), url("../fonts/gilroylight-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "open_sanslight";
-  src: url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff");
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "gilroyextrabold";
-  src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("fonts/gilroyextrabold-webfont.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("../fonts/gilroyextrabold-webfont.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "open_sansregular";
-  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"), url("fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
+}
+
 .main-navigation {
+  position: relative;
   width: 1160px;
-  min-height: 200px;
-  margin: 8px auto 20px;
+  min-height: 190px;
+  margin: 8px auto 20px;;
 }
 .main-header-logo-wrapper {
   width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
   outline: dashed 1px green;
 }
 .main-header-action-wrapper {
@@ -460,12 +476,16 @@ p.footer-copyright {
   justify-content: space-between;
   flex-wrap: wrap;
   width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
   outline: dashed 1px red;
 }
 .site-navigation-wrapper {
   display: flex;
   justify-content: space-between;
   width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
   outline: dashed 1px blue;
 }
 
@@ -477,10 +497,63 @@ p.footer-copyright {
 }
 .user-navigation li {
   box-sizing: border-box;
+  padding-left: 40px;
   min-width: 120px;
   min-height: 60px;
   margin: auto;
 }
+
+.slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-item {
+  position: relative;
+  display: flex;
+  }
+  .slider-item::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background: #f7e296;
+}
+  .slider-item img {
+    display: block;
+    margin-left: 90px;
+    margin-right: 106px;
+  }
+
+.slider-content {
+  position: relative;
+  width: 580px;
+  padding-top: 125px;
+}
+
+  .slider-content::before {
+    content: "01";
+    position: absolute;
+    top: -120px;
+    right: 35px;
+    color: #fff;
+    font-size: 179px;
+    font-weight: 800;
+  }
+   .slider-content::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100px;
+    height: 8px;
+    background-color: #fff;
+  }
+
+
 
 .carousel {
   display: flex;
@@ -492,14 +565,15 @@ p.footer-copyright {
 }
 .items {
   display: flex;
-  outline: dashed 1px blue;
 }
 .image-wrapper {
-  width: 580px;
+  width: 520px;
+  margin-left: 60px;
   outline: dashed 1px red;
 }
 .intro-wrapper {
-  width: 580px;
+  width: 520px;
+  margin-right: 60px;
   outline: dashed 1px yellow;
 }
 
@@ -585,7 +659,7 @@ outline: dashed 1px green;
   text-align: left;
   outline: dashed 1px pink;
 }
-.content,
+
 .main-footer {
   display: flex;
   flex-direction: column;
@@ -615,8 +689,9 @@ outline: dashed 1px pink;
   padding: 0;
 }
 .title-wrapper {
-  width: 1160px;
+  width: 1040px;
   margin: 0 auto;
+  padding: 0 60px;
   outline: dashed 1px red;
 }
 .breadcrumbs li {
@@ -679,4 +754,29 @@ outline: dashed 1px pink;
 .pagination-list li {
   box-sizing: border-box;
   height: 70px;
+}
+
+.main-navigation::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  width: 1160px;
+  height: 186px;
+  background-color: #f7e296;
+  z-index: -1;
+}
+ .user-navigation li{
+  position: relative;
+}
+.header-search::before {
+position: absolute;
+  content: "";
+   top: 7px;
+   left: 5px;;
+   width: 20px;
+   height: 20px;
+   background-image: url("../img/svg-device/search.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+
 }
