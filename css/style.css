@@ -1,3 +1,31 @@
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"), url("../fonts/gilroylight-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("../fonts/gilroyextrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -10,7 +38,6 @@ html, body {
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 .title-main,
 .title-secondary {
   font-family: "Gilroy", Arial, sans-serif;
@@ -18,7 +45,6 @@ html, body {
   font-weight: 800;
   line-height: 1.2;
 }
-
 .main-header-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
@@ -27,7 +53,6 @@ html, body {
   line-height: 1.2;
   text-transform: uppercase;
 }
-
 .site-navigation a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -37,7 +62,6 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .device-catalog-list a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -47,7 +71,6 @@ html, body {
   text-transform: inherit;
   letter-spacing: normal;
 }
-
 .item-intro {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
@@ -56,7 +79,6 @@ html, body {
   line-height: 1.2;
   letter-spacing: normal;
 }
-
 .filter legend {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -64,15 +86,13 @@ html, body {
   font-weight: 800;
   line-height: 1.2;
 }
-
-.slider-features-item b {
+.slider-content b {
   font-family: "Gilroy", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 47px;
   color: rgb(0, 0, 0);
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.2;
 }
-
 .item-intro span {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
@@ -80,7 +100,6 @@ html, body {
   color: rgb(70, 70, 70);
   font-weight: 300;
 }
-
 .catalog-list-item a,
 .partner-short li,
 .contact-us label,
@@ -91,7 +110,6 @@ html, body {
   font-weight: 800;
   line-height: 1.2;
 }
-
 .select {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -101,21 +119,12 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .catalog-product b {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   color: rgb(70, 70, 70);
   font-weight: 300;
 }
-/*.item-number {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 180px;
-  color: red;
-  font-weight: 700;
-  line-height: 1.2;
-  text-transform: uppercase;
-}*/
 a {
   text-decoration: none;
   color: rgb(70, 70, 70);
@@ -255,44 +264,29 @@ li {
 .icon {
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
 }
-
 .icon-1 {
-  background-image: url(../img/popular-1.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #f7e296 url("../img/popular-1.min.svg") no-repeat 50% 50%;
 }
 
 .icon-2 {
-  background-image: url(../img/popular-2.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% bottom;
+  background: #f7e296 url("../img/popular-2.min.svg") no-repeat 50% bottom;
 }
 .icon-3 {
-  background-image: url(../img/popular-3.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #f7e296 url("../img/popular-3.min.svg") no-repeat 50% 50%;
 }
 .icon-4 {
-  background-image: url(../img/popular-4.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #f7e296 url("../img/popular-4.min.svg") no-repeat 50% 50%;
 }
 .icon-5 {
-  background-image: url(../img/popular-5.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #f7e296 url("../img/popular-5.min.svg") no-repeat 50% 50%;
 }
 .icon-6 {
-  background-image: url(../img/popular-6.min.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #f7e296 url("../img/popular-6.min.svg") no-repeat 50% 50%;
 }
 .catalog-list-item a:hover .icon {
   background-color: rgba(240, 197, 46, 1);
 }
-
 .catalog-list-item a:active .icon {
   opacity: 0.3;
 }
@@ -346,30 +340,31 @@ background-color: #f6dada;
 }
 
 .main-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
+}
+.main-footer::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -140px;
+  width: 1440px;
+  height: 323px;
   background-color: #464646;
+  z-index: -1;
 }
 
 .main-footer .main-header-logo {
   color: #ffc600;
 }
-
 .main-footer a {
   color: #ffffff;
 }
 p.footer-copyright {
   margin: 0;
 }
-.filter-caption-wrapper {
-  width: 440px;
-  background-color: #dcdcdc;
-}
-
-.filter-wrapper {
-  width: 440px;
-  background-color: #ebebeb;
-}
-
 .results {
   opacity: 0.3;
   border: none;
@@ -382,11 +377,6 @@ p.footer-copyright {
 
 .results:active {
   opacity: 1;
-}
-
-.results-wrapper {
-  width: 975px;
-  background-color: #ebebeb;
 }
 
 .filter-results-item {
@@ -420,34 +410,6 @@ p.footer-copyright {
 
 .pagination-button:active a {
   opacity: 0.3;
-}
-
-@font-face {
-  font-family: "gilroylight";
-  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"), url("../fonts/gilroylight-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "open_sanslight";
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gilroyextrabold";
-  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("../fonts/gilroyextrabold-webfont.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "open_sansregular";
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
 }
 
 .container {
@@ -537,9 +499,10 @@ p.footer-copyright {
   .slider-content::before {
     content: "01";
     position: absolute;
-    top: -120px;
-    right: 35px;
+    top: -113px;
+    right: 50px;
     color: #fff;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 179px;
     font-weight: 800;
   }
@@ -552,53 +515,36 @@ p.footer-copyright {
     height: 8px;
     background-color: #fff;
   }
-
-
-
-.carousel {
-  display: flex;
-  flex-direction: column;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
-  outline: dashed 1px green;
-}
 .items {
   display: flex;
 }
-.image-wrapper {
-  width: 520px;
-  margin-left: 60px;
-  outline: dashed 1px red;
-}
-.intro-wrapper {
-  width: 520px;
-  margin-right: 60px;
-  outline: dashed 1px yellow;
-}
-
 .catalog-list {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  outline: dashed 1px red;
-  margin: 0 auto;
-  padding: 0;
+  outline:solid 2px green;
 }
 .catalog-list-item {
 margin: 0;
 width: 160px;
 }
 .features {
+  position: relative;
   display: flex;
-  max-width: 1440px;
-  min-height: 320px;
-  margin: 0 auto;
-  padding: 0;
+  margin-bottom: 200px;
   outline: dashed 1px yellow;
 }
+.features::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: -140px;
+  width: 1440px;
+  height: 288px;
+  background-color: #e5e5e5;
+  z-index: -2;
+}
 .option-list-wrapper {
-margin: 0 auto 0 140px;
+margin: 0 auto 0 0;
 padding: 80px 80px 0 0;
 outline: dashed 1px green;
 }
@@ -608,30 +554,23 @@ outline: dashed 1px green;
 
 }
 .option-info {
-  margin: 0 140px 0 auto;
+  margin: 0 0 0 auto;
   padding: 40px 295px 0 145px;
   outline: dashed 1px green;
 }
 .delivery {
-  background-image: url(../img/svg-device/delivery.svg);
+  background-image: url("../img/svg-device/delivery.svg");
   background-repeat: no-repeat;
-  background-position: 93% 50%;
+  background-position: 93% 85%;
 }
 .parnership {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
   outline: dashed 1px blue;
-  margin: 0 auto;
-  padding: 0;
 }
 .about-us-contact-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  outline: dashed 1px red;
-  margin: 0 auto;
-  padding: 0;
 }
 .about-us {
   display: inline;
@@ -660,13 +599,6 @@ outline: dashed 1px green;
   outline: dashed 1px pink;
 }
 
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-}
 .footer-top-wrapper {
   display: flex;
   outline: dashed 1px yellow;
@@ -699,50 +631,68 @@ outline: dashed 1px pink;
 }
 .content-wrapper {
   display: flex;
-  margin: 0;
+  margin: 0 0 60px 0;
   padding: 0;
-  width: 1440px;
 }
 .product-filter {
-  display: flex;
-  flex-direction: column;
-  width: 470px;
+  width: 330px;
   min-height: 1283px;
+  outline: solid 2px pink;
 }
 .filter-caption-wrapper {
+  position: relative;
   width: 470px;
   min-height: 70px;
 }
-.filter-wrapper {
-  width: 470px;
-  min-height: 1213px;
+.filter-caption-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  width: 1440px;
+  height: 70px;
+  background-color: rgba(220,220,220,0.5);
+  z-index: -1;
+}
+.filter-caption-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  width: 468px;
+  height: 1283px;
+  background-color: rgba(220,220,220,0.5);
+  z-index: -1;
 }
 .product-select {
   display: flex;
   flex-direction: column;
-  width: 970px;
+  width: 835px;
   min-height: 1283px;
+  outline: 2px solid green;
 }
 .results-wrapper {
   display: flex;
-  width: 970px;
+  margin-bottom: 70px;
+  width: 835px;
   height: 70px;
 }
 .results-wrapper span,
 .results-wrapper ul {
   display: inline;
   box-sizing: border-box;
+
 }
 .catalog-product-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: auto;
   min-height: 900px;
-  padding: 70px 30px 70px 70px;
+  padding-left: 30px;
   outline: dashed 1px blue;
 }
 .catalog-product {
-  margin-right: 40px;
+  margin-left: 40px;
   height: 500px;
 }
 .pagination-list  {
@@ -778,5 +728,4 @@ position: absolute;
    background-image: url("../img/svg-device/search.svg");
    background-repeat: no-repeat;
    background-position: 0 0;
-
 }
