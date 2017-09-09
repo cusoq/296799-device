@@ -306,7 +306,7 @@ opacity: 0.6;
   background-position: 93% 85%;
 }
 
-.check input[checked] + label::before {
+.check input:checked + label::before {
   left: -35px;
   background-image: url("../img/svg-device/checkbox-on.svg");
 }
@@ -328,7 +328,7 @@ opacity: 0.6;
   background-position: 93% 85%;
 }
 .radio input:active,
-.radio input[checked] + label::before {
+.radio input:checked + label::before {
   background-image: url("../img/svg-device/radio-on.svg");
 }
 
@@ -495,6 +495,7 @@ opacity: 0.6;
   padding-left: 15px;
   color: rgba(0,0,0,0.4);
   background-color: #f2f2f2;
+  border: solid 2px #f2f2f2;
   outline: transparent;
 }
 .contact-us .contact-us-input {
@@ -632,31 +633,41 @@ margin-right: 30px;
   height: 70px;
   text-align: center;
   border-radius: 50%;
-  background-color: red;
+  background-color: rgba(255,0,0,0.5);
 }
+
 .catalog-product-image-add {
-  position: absolute;
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  padding: 50px 80px 0 80px;
-  width: 360px;
-  height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catalog-product-image-add a {
+  display: block;
+  margin: 0 auto;
   text-align: center;
+}
+
+.catalog-product {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+}
+.catalog-product::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 370px;
   background-color: rgba(238,238,238,0.7);
-  z-index: 1;
 }
 
-.catalog-product-btn {
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.catalog-product-btn:hover  + .catalog-product-image-add {
-  display: flex;
+.catalog-product:hover::before,
+.catalog-product:hover .catalog-product-image-add {
+  display: block;
 }
 .discr {
   font-size: 0;
@@ -1321,7 +1332,7 @@ display: flex;
   position: absolute;
     content: "";
      top: 20px;
-     left: 40px;
+     left: 0px;
      width: 20px;
      height: 20px;
      background-image: url("../img/svg-device/user.svg");
@@ -1447,4 +1458,8 @@ display: flex;
   z-index: 2;
 
   border: none;
+}
+.btn-form {
+  border:none;
+  background: none;
 }
