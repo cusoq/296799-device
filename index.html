@@ -20,7 +20,7 @@
               <form class="header-search" action="#" method="get">
                 <label class="visually-hidden" for="search-id">Поиск по сайту</label>
                 <input class="text-search" type="search" id="search-id" name="search" placeholder="Поиск по сайту">
-                <span class="input-wrapper"><input class="search-btn" type="submit" value="Найти"></span>
+                <button class="search-btn">Найти</button>
               </form>
             </li>
             <li class="user"><a class="profile pale-direct" href="#">Войти</a></li>
@@ -58,9 +58,9 @@
             <b>Делай селфи,<br> как Бен Стиллер!</b>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="btn btn-slider">Подробнее</a>
-            <i></i>
-            <i></i>
-            <i></i>
+            <i class="slider-toggle-current"></i>
+            <i class="slider-toggle"></i>
+            <i class="slider-toggle"></i>
             <ul class="slider-features">
               <li class="slider-features-item">
                 <p class="data">8,5 м</p>
@@ -89,9 +89,9 @@
             <b>Худеем правильно!</b>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a href="#" class="btn btn-slider">Подробнее</a>
-            <i></i>
-            <i></i>
-            <i></i>
+            <i class="slider-toggle"></i>
+            <i class="slider-toggle-current"></i>
+            <i class="slider-toggle"></i>
             <ul class="slider-features">
               <li class="slider-features-item">
                 <p class="data">48 часов</p>
@@ -111,9 +111,9 @@
             <b>Порхает как бабочка, жалит как пчела!</b>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#" class="btn btn-slider">Подробнее</a>
-            <i></i>
-            <i></i>
-            <i></i>
+            <i class="slider-toggle"></i>
+            <i class="slider-toggle"></i>
+            <i class="slider-toggle-current"></i>
             <ul class="slider-features">
               <li class="slider-features-item">
                 <p class="data">800 м</p>
@@ -232,9 +232,11 @@
       <h2 class="visually-hidden">Отзовитесь!</h2>
       <form class="modal-form-contact" action="#" method="post">
         <div><label for="name">Ваше имя:</label>
-        <p><input class="contact-us-input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></p></div>
+          <p><input class="contact-us-input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></p>
+        </div>
         <div><label for="email">Ваш e-mail:</label>
-        <p><input class="contact-us-input" type="email" name="email" id="email" placeholder="Для отправки ответа"></p></div>
+          <p><input class="contact-us-input" type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
+        </div>
         <label for="message">Текст письма:</label>
         <p><textarea class="contact-us-text" name="message" id="message" placeholder="В свободной форме">
         </textarea></p>
@@ -244,7 +246,8 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Вам сюда!</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBUj4LcmPD" width="994" height="593" frameborder="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.527429315669536!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1505059304850"
+        width="994" height="593"></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </div>
