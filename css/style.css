@@ -118,7 +118,7 @@ mark {
 .catalog-list-item a,
 .partner-short li,
 .contact-us label,
-.catalog-product p {
+.catalog-product a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   color:  rgba(0,0,0,1);
@@ -220,10 +220,9 @@ h1.title-main {
   	height: 1px !important;
   	width: 1px !important;
   	overflow: hidden;
+    /* Reason for !important: vendor code */
 }
-/*.select-title {
 
-}*/
 .filter fieldset {
   position: relative;
   border: none;
@@ -442,7 +441,9 @@ opacity: 0.6;
 .catalog-list-item a:active .icon {
   opacity: 0.3;
 }
-
+.catalog-list-item p {
+  padding-right: 50px;
+}
 .partner-list img {
   opacity: 0.2;
   filter: grayscale(1);
@@ -561,7 +562,6 @@ background-color: #f6dada;
 }
 .modal-close:active {
   opacity: 0.3;
-
 }
 
 .main-footer {
@@ -569,6 +569,7 @@ background-color: #f6dada;
   flex-direction: column;
   color: #ffffff;
   background-color: #464646;
+  min-width: 1200px;
 }
 .main-footer .main-header-logo {
 
@@ -684,7 +685,9 @@ margin-right: 30px;
   display: block;
 }
 .discr {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+
 }
 .discr p {
   display: inline-block;
