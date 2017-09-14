@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Моноподы для селфи</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
               <a class="profile" href="#">
               <span>Валентин Петухов</span>
             </a>
-              <a class="pale-inverse" href="#">Выйти</a>
+              <a class="exit pale-inverse" href="#">Выйти</a>
             </li>
             <li class="compare"><a class="pale-direct" href="#">Сравнить</a></li>
             <li class="cart"><a class=" pale-direct" href="#">Корзина</a></li>
@@ -64,7 +64,7 @@
       </div>
       <div class="content-wrapper">
         <aside class="product-filter">
-          <h2 class="select select-title select-title-filter">Фильтр</h2>
+          <h2 class="select select-title select-title-filter">Фильтр:</h2>
           <form class="filter" method="get" action="?">
             <fieldset class="range-filter">
               <legend>Стоимость</legend>
@@ -87,7 +87,7 @@
                 <label for="black-label">Черный</label></p>
 
               <p><input class="visually-hidden checkbox-hide" type="checkbox" name="color-green" id="green-label">
-                <label for="green-label">Зелёный</label></p>
+                <label for="green-label">Белый</label></p>
 
               <p><input class="visually-hidden checkbox-hide" type="checkbox" name="color-blue" id="blue-label" checked>
                 <label for="blue-label">Синий</label></p>
@@ -104,7 +104,7 @@
                 <label for="disabled-label">Нет</label></p>
             </fieldset>
             <fieldset class="filter-result">
-              <a href="#" class="btn btn-filter">Показать</a>
+              <button class="btn btn-filter">Показать</button>
             </fieldset>
           </form>
         </aside>
@@ -124,7 +124,6 @@
           <div class="catalog-product-wrapper">
             <article class="catalog-product">
               <div class="catalog-product-image">
-                <mark>New</mark>
                 <img src="img/item-1_360x380.png" width="360" height="380" alt="Любительская селфи-палка">
                 <div class="catalog-product-image-add">
                   <a href="#" class="btn btn-catalog-product">В корзину</a>
@@ -138,7 +137,6 @@
             </article>
             <article class="catalog-product">
               <div class="catalog-product-image">
-                <mark>New</mark>
                 <img src="img/item-2_360x380.png" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="catalog-product-image-add">
                   <a href="#" class="btn btn-catalog-product">В корзину</a>
@@ -152,7 +150,6 @@
             </article>
             <article class="catalog-product">
               <div class="catalog-product-image">
-                <mark>New</mark>
                 <img src="img/item-3_360x380.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="catalog-product-image-add">
                   <a href="#" class="btn btn-catalog-product">В корзину</a>
@@ -167,14 +164,14 @@
             <article class="catalog-product">
               <div class="catalog-product-image">
                 <mark>New</mark>
-                <img src="img/item-4_360x380.png" width="360" height="380" alt="Селфи-палка Следуй за мной ">
+                <img src="img/item-4_360x380.png" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
                 <div class="catalog-product-image-add">
                   <a href="#" class="btn btn-catalog-product">В корзину</a>
                   <a class="pale-inverse" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <div class="discr">
-                <h3><a class="name" href="#">Селфи-палка "Следуй за мной"</a></h3>
+                <h3><a class="name" href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
                 <p class="price"><b>4&thinsp;900 руб.</b></p>
               </div>
             </article>
@@ -193,7 +190,7 @@
     </main>
   </div>
   <footer class="main-footer">
-    <div class="container">
+    <div class="catalog-footer-container">
       <div class="footer-top-wrapper">
         <ul class="footer-navigation">
           <li>
@@ -207,13 +204,13 @@
         </ul>
       </div>
       <div class="footer-middle-wrapper">
-        <p class="footer-adress">Москва, ул. Строителей, 15</p>
+        <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-site-navigation">
-          <li class="site-navigation"><a class="pale-direct" href="#">Доставка</a></li>
-          <li class="site-navigation"><a class="pale-direct" href="#">Гарантия</a></li>
-          <li class="site-navigation"><a class="pale-direct" href="#">Контакты</a></li>
+          <li><a class="pale-direct" href="#">Доставка</a></li>
+          <li><a class="pale-direct" href="#">Гарантия</a></li>
+          <li><a class="pale-direct" href="#">Контакты</a></li>
         </ul>
-        <p class="footer-phone">+7495 123-45-67</p>
+        <p class="footer-phone">Тел: +7 (495) 495-95-95</p>
       </div>
       <div class="footer-bottom-wrapper">
         <div class="footer-social">
